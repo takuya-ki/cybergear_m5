@@ -2,6 +2,10 @@
 #include <M5Stack.h>
 #include <math.h>
 #include "cybergear_controller.hh"
+
+#define USE_ESP32_CAN  // If you want to use ESP32_CAN or PWRCAN, please uncomment this line
+#define USE_PWRCAN     // If you want to use PWRCAN, please uncomment this line
+
 #ifdef USE_ESP32_CAN
 #include "cybergear_can_interface_esp32.hh"
 #else
